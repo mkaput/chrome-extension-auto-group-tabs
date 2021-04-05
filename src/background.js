@@ -5,7 +5,7 @@ chrome.action.onClicked.addListener(groupTabs);
  *
  * See `README.md` of this repository for maintained invariants.
  *
- * @param windowId - ID of window which tabs are to be grouped
+ * @param {number} windowId - ID of window which tabs are to be grouped
  * @return {Promise<void>}
  */
 async function groupTabs({ windowId }) {
@@ -161,9 +161,7 @@ function tabHost({ pendingUrl, url }) {
  * @return {Promise<chrome.tabs.Tab[]>}
  */
 function findTabs(windowId) {
-  return new Promise((resolve) => {
-    chrome.tabs.query({ windowId, pinned: false }, resolve);
-  });
+  return chrome.tabs.query({ windowId, pinned: false });
 }
 
 /**

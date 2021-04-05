@@ -2,9 +2,12 @@
   "manifest_version": 3,
   "name": "Auto group tabs",
   "version": "1.0.0",
-  "description": "Automatically group tabs in a smart way.",
   "minimum_chrome_version": "89",
+  "description": "Automatically group tabs in a smart way.",
+  "author": "Marek Kaput",
+  "homepage_url": "https://github.com/mkaput/chrome-extension-auto-group-tabs",
   "permissions": ["tabs", "tabGroups"],
+  "offline_enabled": true,
   "icons": {
     "16": "/assets/icon_16.png",
     "32": "/assets/icon_32.png",
