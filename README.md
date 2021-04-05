@@ -1,5 +1,7 @@
 # Auto group tabs (Chrome Extension)
 
+[![CI](https://github.com/mkaput/chrome-extension-auto-group-tabs/actions/workflows/ci.yml/badge.svg)](https://github.com/mkaput/chrome-extension-auto-group-tabs/actions/workflows/ci.yml)
+
 This extension provides an action that groups ungrouped tabs of given window into groups with common
 hostname.
 
