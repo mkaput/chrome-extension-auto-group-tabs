@@ -1,0 +1,32 @@
+{
+  "name": "@mkaput/auto-group-tabs",
+  "version": "1.0.0",
+  "engines": {
+    "node": "^15.0.0",
+    "npm": "NPM not supported, please use Yarn 1.x",
+    "yarn": "^1.22.0"
+  },
+  "scripts": {
+    "fmt": "prettier --write .",
+    "lint": "npm run lint:fmt && npm run lint:eslint",
+    "lint:eslint": "eslint . --ext .js,.mjs",
+    "lint:fmt": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "targets": {
+    "ext": {
+      "sourceMap": {
+        "inline": true,
+        "inlineSources": true
+      }
+    }
+  },
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/chrome": "^0.0.134",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "2.2.1"
+  }
+}
