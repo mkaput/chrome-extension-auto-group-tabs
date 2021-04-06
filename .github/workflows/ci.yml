@@ -16,4 +16,6 @@ jobs:
 
       - uses: bahmutov/npm-install@v1
 
-      - run: yarn run lint
+      - run: yarn lint
+
+      - run: yarn test

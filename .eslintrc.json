@@ -7,9 +7,17 @@
   "globals": {
     "chrome": "readonly"
   },
-  "extends": ["eslint:recommended", "prettier", "plugin:import/errors", "plugin:import/warnings"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 12,
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "rules": {
@@ -22,7 +30,8 @@
       }
     ],
     "sort-imports": "off",
-    "no-unused-vars": [
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": [
       "warn",
       {
         "argsIgnorePattern": "^_"
